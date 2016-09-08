@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Jonathan Kuc </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Material Design Icons Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="headerName">
+          Jonathan
+        </h1>
+        <h1 id="headerName">
+          Kuc
+        </h1>
+        <p id="headerSubtitle">
+          Seattle Native && Computer Science Major
+        </p>
+      </div>
+
+      <div class="introduction">
+        <h2 id="sectionTitle">
+          Introduction
+        </h2>
+        <img id="introPic" src="profilePic.jpg"  />
+        <div class="introContent">
+          <p>
+            My name is Jonathan Kuc, I am currently a sophomore at Seattle University
+            studying towards my Bachelor’s in Computer Science. I started my programming
+            journey when I a rising high school Freshman and was exposed to the world of
+            coding through a summer camp at Google. Ever since that time I knew programming
+            was my true passion.
+          </p>
+          <p>
+            Through programming I have learned to appreciate the hard work, effort, and creativity
+            that goes into developing much of the technology that we used today. Not only have I gained
+            an appreciation for the combination of technology and art to create such beautiful designs and
+            applications, but I have firsthand experience in seeing how lines of code can make a mere idea become
+            a full-fledged product.
+          </p>
+          <p>
+            As a developer, my programming skillset currently consists of HTML, CSS, Javascript, and C++. I am an
+            enthusiastic individual and always looking to pursue new opportunities to learn more.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <h3 id="sectionTitle">
+          Portfolio
+        </h3>
+
+        <ol class="cardLayout">
+          <li class="card">
+            <h2 class="cardTitle">
+              Carbon Footprint Calculator
+            </h2>
+            <a id="cfcButton">
+              <div class="overlayContainer">
+                <div class="overlay">
+                  <p>
+                    Click to View More
+                  </p>
+                </div>
+                <img src="carbonFootprintCalc.png" class="cardPicture"/>
+              </div>
+            </a>
+          </li>
+
+          <li class="card">
+            <h2 class="cardTitle"> Praxis ECE </h2>
+            <a id="praxisButton">
+              <div class="overlayContainer">
+                <div class="overlay">
+                  <p>
+                    Click to View More
+                  </p>
+                </div>
+                <img src="praxis.png" class="cardPicture"/>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <!--Modals-->
+      <div id="cfcModal" class="modal">
+        <div class="modal-content">
+          <span class="cfc close">
+            <i class="zmdi zmdi-close zmdi-hc-1x"></i>
+          </span>
+          <h1 class="modalTitle">
+            Carbon Footprint Calculator
+          </h1>
+          <img src="modal_carbonFootprintcalc.png" class="modalPic" />
+          <P>
+            The Carbon Footprint Calculator app and website are one of the first projects that I heavily invested time and effort into during
+            my time in high school. The goal of the app was to help users calculate their carbon footprint based on a few different factors such
+            as electricity, natural gas, and heating oil bills. The website was to help with marketing the product as well as providing users with
+            more information regarding the app. My primary focus was on designing the overall UI of the app and elements of the website.
+          </p>
+          <p>
+            The product was developed as part of a school-wide science fair and our group was awarded the ‘Most Likely to Succeed in the Marketplace’
+            and ‘Third Place in the Design Category’ at WSU’s Imagine Tomorrow Competition in 2013.
+          </p>
+          <p>
+            If you are interested and would like to see screenshots, please click the link below:
+          </p>
+          <a href="http://goo.gl/SDfXLD" class="btn btn-small">
+            <i class="zmdi zmdi-collection-image zmdi-hc-1x"></i>
+            View photo gallery
+          </a>
+        </div>
+      </div>
+
+      <div id="praxisModal" class="modal">
+        <div class="modal-content">
+          <span class="praxis close">
+            <i class="zmdi zmdi-close zmdi-hc-1x"></i>
+          </span>
+          <h1 class="modalTitle">
+            Praxis Early Childhood Education
+          </h1>
+          <img src="modal_praxis.png" class="modalPic" />
+          <p>
+            The Praxis Early Childhood Education website is a website that I developed for a local Seattle non-profit organization. I provided the
+            organization a web presence in order to help them distribute important documents and dates to their supporters. Working with the head of
+            the organization, we strived to create a colorful interface while managing a simple design to ensure all relevant information was easy to
+            identify.
+          </p>
+          <p>
+            If you are interested and would like to see screenshots, please click the link below:
+          </p>
+          <a href="http://www.goo.gl/YZmSyP" class="btn btn-small">
+            <i class="zmdi zmdi-collection-image zmdi-hc-1x"></i>
+            View photo gallery
+          </a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h3 id="sectionTitle">
+          Contact
+        </h3>
+        <div class="contactIcons">
+          <a href="mailto:jonathankuc@gmail.com" style="float: left;">
+            <i class="zmdi zmdi-email zmdi-hc-4x"></i>
+            <p class="caption">
+              jonathankuc@gmail.com
+            </p>
+          </a>
+          <a href="https://www.linkedin.com/in/jonathankuc" style="float: right;">
+            <i class="zmdi zmdi-linkedin-box zmdi-hc-4x"></i>
+            <p class="caption">
+              linkedin.com/in/jonathankuc
+            </p>
+          </a>
+      </div>
+    </div>
+    </div>
+  </body>
+  
+  <script src="modal.js"></script>
+</html>

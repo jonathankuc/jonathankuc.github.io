@@ -1,0 +1,536 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.125rem;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+ol {
+  -webkit-padding-start: 0px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Selectors for the header (picture with name and such) */
+.header {
+  height: 400px;
+  padding: 50px 0px 0px 0px;
+  background-image:linear-gradient(rgba(2,119,189, 0.7),
+      rgba(2,119,189, 0.7)), url("headerBackground.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+#headerName {
+  font-size: 7rem;
+  margin: inherit;
+}
+
+#headerSubtitle {
+  font-size: 1.5rem;
+}
+
+/* Selectors for the about me section */
+.introduction {
+  color: #393939;
+  line-height: 1.4;
+  text-align: center;
+  height: 400px;
+  padding: 35px 0px;
+}
+
+.introContent {
+  display: inline-block;
+  width: 800px;
+  position: relative;
+  left: 100px;
+  text-align: left;
+}
+
+#introPic {
+  display:inline-block;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  left: 20px;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+#sectionTitle {
+  font-size: 3rem;
+  margin: inherit;
+}
+
+/* Selectors for the portfolio section */
+.portfolio {
+  color: #ffffff;
+  line-height: 1.4;
+  text-align: center;
+  height: 400px;
+  padding: 35px 0px;
+  background-color: #334055;
+}
+
+.cardLayout {
+  list-style: none;
+  text-align: center;
+}
+
+.card {
+  text-align: left;
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  margin: 0px 30px 30px 30px;
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.cardPicture {
+  width: 450px;
+  height: 235px;
+  position: absolute;
+}
+
+/* Selectors for the contact section */
+.contact {
+  color: #393939;
+  line-height: 1.4;
+  text-align: center;
+  height: 180px;
+  padding: 35px 0px;
+}
+
+.contactIcons {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  height: 100px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.contactIcons a {
+  position: relative;
+  text-decoration: none;
+  color: #393939;
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+}
+
+.contact a:hover {
+  color: #29B6F6;
+}
+
+.caption {
+  color: #29B6F6;
+  margin: 2px;
+  font-size: 1rem;
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 10px 20px;
+  border: 1px solid black;
+  width: 1000px;
+  overflow-x: hidden;
+}
+
+.modalPic {
+  width: 100%;
+}
+
+.cfc-modal {
+  height: 780px;
+}
+
+.praxis-modal {
+  height: 580px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.modalTitle {
+  color: #393939;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.modal-content a {
+  color: #29B6F6;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  background: #29B6F6;
+  color: #fff;
+}
+
+.close {
+  color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  border: solid 2px #29B6F6;
+  text-align: center;
+  background: transparent;
+}
+
+.btn-small {
+  padding: 15px 18px;
+  font-size: 1.2rem;
+}
+
+.overlayContainer {
+  position: relative;
+  display: block;
+  height: 235px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  background: #29B6F6;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  z-index: 2;
+}
+
+.overlay:hover {
+  opacity: 0.8;
+}
+
+.overlay p {
+  position: absolute;
+  left: calc(100% - 360px);
+  top: calc(100% - 180px);
+  font-size: 2rem;
+  opacity: 1;
+  color: #fff;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:1330px) {
+  /* Header Section */
+  .header {
+    height: 350px;
+    padding: 20px 0px;
+  }
+
+  /* Introduction Section */
+  .introduction {
+    height: 350px;
+    padding: 25px 0px;
+  }
+
+  .introduction p:nth-child(2) {
+    display: none;
+  }
+
+  .introContent {
+    left: 20px;
+    width: 560px;
+  }
+
+  #introPic {
+    height: 200px;
+    width: 200px;
+    left: -20px;
+    top: -20px;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+    height: 350px;
+    padding:25px 0px;
+  }
+
+  .card {
+    width: 400px;
+    height: 210px;
+  }
+
+  .cardPicture {
+    width: 400px;
+    height: 210px;
+  }
+
+  .overlayContainer {
+    width: 400px;;
+    height: 210px;
+  }
+
+  .overlay {
+    width: 400px;
+    height: 210px;
+  }
+
+  .overlay p {
+    left: calc(100% - 330px);
+    top: calc(100% - 160px);
+  }
+
+  .contact {
+    height: 180px;
+    padding:25px 0px;
+  }
+}
+
+
+@media only screen and (max-width:1030px) {
+  /* Introduction Section */
+  .introduction {
+    height: 450px;
+  }
+
+  .introduction p:nth-child(3) {
+    display: none;
+  }
+
+  #introPic {
+    margin: 20px auto -20px auto;
+    left: 0px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .introContent {
+    display: block;
+    left: 0;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+    height: 780px;
+  }
+
+  .cardLayout {
+    padding: 0px 10px;
+  }
+
+  .card {
+    margin: 0px 0px 60px 0px;
+    width: 550px;
+    height: 284px;
+  }
+
+  .cardPicture {
+    width: 550px;
+    height: 284px;
+  }
+
+  .overlayContainer {
+    width: 550px;;
+    height: 284px;
+  }
+
+  .overlay {
+    width: 550px;
+    height: 284px;
+  }
+
+  .overlay p {
+    left: calc(100% - 390px);
+    top: calc(100% - 200px);
+  }
+
+  .modal-content {
+    width: 750px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  /* Header Section */
+  .header {
+    height: 350px;
+    padding: 60px 0px 0px 0px;
+  }
+
+  #headerSubtitle {
+    display: none;
+  }
+
+  /* Introduction Section */
+  .introduction p:nth-child(3) {
+    display: none;
+  }
+
+  /* Contact Section */
+  .contactIcons {
+    width: 280px;
+  }
+
+  .caption {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header Section */
+  #headerName {
+    font-size: 6rem;
+  }
+
+  .header {
+    height: 270px;
+  }
+
+  /* Introduction Section */
+  .introduction {
+    height: 450px;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+    height: 700px;
+  }
+
+  .card {
+    width: 470px;
+    height: 247px;
+  }
+
+  .cardPicture {
+    width: 470px;
+    height: 247px;
+  }
+
+  .overlayContainer {
+    width: 470px;
+    height: 247px;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  /* Header Section */
+  .header {
+    height: 600px;
+    padding-top: 160px;
+  }
+
+  #headerSubtitle {
+    display: none;
+  }
+
+    #headerName {
+      font-size: 12rem;
+    }
+
+    #sectionTitle {
+      font-size: 5rem;
+    }
+
+    /* Introduction Section */
+    .introduction {
+      height: 1000px;
+    }
+
+    .introContent {
+      font-size: 2.5rem;
+      padding: 0px 70px;
+      width: auto;
+    }
+
+    #introPic {
+      height: 350px;
+      width: 350px;
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      height: 800px;
+    }
+
+    .cardTitle {
+      display: none;
+    }
+
+    /* Contact Section */
+    .contact {
+      height: 195px;
+      padding: 15px 0px 100px 0px;
+    }
+
+    .contactIcons {
+      font-size: 2rem;
+      width: 350px;
+    }
+
+    .caption {
+      display: none;
+    }
+}
