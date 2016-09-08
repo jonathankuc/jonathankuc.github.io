@@ -53,9 +53,9 @@
   var mq = window.matchMedia("(max-width: 1029px)");
   if(mq.matches) {
     document.getElementById("cfcButton").onclick = function() {
-        location.href='http://goo.gl/SDfXLD';
+        location.href='https://goo.gl/photos/V8gFyuidJQ4kk6Tt9';
       }
     document.getElementById("praxisButton").onclick = function() {
-        location.href='http://www.goo.gl/YZmSyP';
+        location.href='https://goo.gl/photos/B75dmKJ6U8b6fLAy8';
       }
   }
