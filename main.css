@@ -43,7 +43,7 @@ ol {
   line-height: 1.4;
   text-align: center;
   height: 400px;
-  padding: 35px 0px;
+  padding: 35px 0px 70px 0px;
 }
 
 .introContent {
@@ -61,7 +61,6 @@ ol {
   width: 300px;
   border-radius: 50%;
   left: 20px;
-  box-shadow: 5px 5px 2px #888888;
 }
 
 #sectionTitle {
@@ -301,10 +300,10 @@ ol {
   }
 
   #introPic {
-    height: 200px;
-    width: 200px;
-    left: -20px;
-    top: -20px;
+    height: 250px;
+    width: 250px;
+    left: -45px;
+    top: 0px;
   }
 
   /* Portfolio Section */
@@ -364,9 +363,8 @@ ol {
 
   .introContent {
     display: block;
-    left: 0;
-    padding: 0px 20px;
     margin: 0 auto;
+    margin-top: 45px;
   }
 
   /* Portfolio Section */
