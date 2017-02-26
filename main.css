@@ -116,9 +116,9 @@ ol {
 .contactIcons {
   position: relative;
   display: inline-block;
-  padding: 20px;
+  padding: 20px 0px 0px 25px;
   height: 100px;
-  width: 550px;
+  width: 735px;
   margin: 0 auto;
 }
 
@@ -425,7 +425,7 @@ ol {
 
   /* Contact Section */
   .contactIcons {
-    width: 280px;
+    width: 370px;
   }
 
   .caption {
